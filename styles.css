@@ -1,0 +1,109 @@
+body {
+margin: 0px;
+padding: 0px;
+}
+
+* {
+font-family: sans-serif;
+}
+
+.content-table {
+border-collapse: collapse;
+margin: 25px auto;
+font-size: 0.9em;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+white-space: nowrap;
+}
+
+.content-table thead tr {
+background-color: #009879;
+color: #ffffff;
+text-align: left;
+font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+padding: 15px 9px;
+}
+
+.content-table tbody tr {
+border-bottom: 1px solid #dddddd;
+}
+
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 21px;
+}
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #e8e7e7;;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 13px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input#switcher:checked + .slider {
+background-color: #009879;
+}
+
+input#switcher:focus + .slider {
+box-shadow: 0 0 1px #009879;
+}
+
+input#switcher:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+input#row {
+border-style: dotted;
+padding: 8px;
+}
+
+input#row:focus {
+outline: none;
+box-shadow: 0 0 5px #0098797d;
+}
+
+td#small-input input{
+max-width: 50px;
+}
+
+td#medium-input input{
+max-width: 100px;
+}
+
+.new-row-button{
+border-radius: 50px;
+background-color: #009879;
+border: none;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+font-size: x-large;
+width: 80px;
+}

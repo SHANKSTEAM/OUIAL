@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<table class="content-table">
+ <thead>
+  <tr>
+  <th>Action</th>
+	<th>Tienda</th>
+	<th>Disponibilidad</th>
+	<th>Nombre de Producto</th>
+	<th>Precio</th>
+	<th>Precio Minorista</th>
+	<th>Cantidad</th>
+	<th>Color</th>
+	<th>Talla</th>
+	<th>Ubicacion En la tienda</th>
+	<th>EAN</th>
+	<th>SKU</th>
+	<th>Numero De Referencia</th>
+  </tr>
+ </thead>
+ 
+ <tbody>
+
+	<tr>
+		<td>
+			<button class="new-row-button" onclick="add_item_click(this);">+</button>
+		</td>
+		  <td>
+		   <input id="row" type="text" placeholder="Ganga Lotes">
+		  </td>
+		  <td>
+		  <label class="switch">
+		  <input id="switcher" type="checkbox">
+		  <span class="slider"></span>
+		  </label>
+		  </td>
+		  <td><input id="row" type="text" placeholder="Camiseta de manga larga"></td>
+		  <td id="small-input"><input id="row" onkeypress="return isNumberKey(event)"type="number" min ="0" step=".01" required  value="12,45">€</td>
+		  <td id="small-input"><input id="row" onkeypress="return isNumberKey(event)"type="number" min ="0" step=".01" required  value="12,45">€</td>
+		  <td id="small-input"><input id="row" onkeypress="return isNumberKey(event)"type="number" min ="0" step="1" required  value="0"></td>
+		  <td id="small-input"><input id="row" type="text" placeholder="Azul"></td>
+		  <td id="small-input"><input id="row" type="text" placeholder="XS"></td>
+		  <td id="medium-input"><input id="row" type="text" placeholder="1,Bajo"></td>
+		  <td id="medium-input"><input id="row" type="text" placeholder="9351924686230"></td>
+		  <td id="medium-input"><input id="row" type="text" placeholder="GP021D0LR-G11"></td>
+		  <td id="medium-input"><input id="row" type="text" placeholder="88882572"></td>
+	</tr>
+	
+ </tbody>
+</table>
+
+<script src="javascript.js"></script>
+</body>
+</html>
